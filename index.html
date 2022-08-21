@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/99171c6304.js" crossorigin="anonymous"></script>
+    <title>Lista de tareas + app clima actual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-tareas">
+            <div class="perfil">
+                <div id="fecha"></div>
+                <h1>Bienvenido Augusto</h1>
+                <span>"Siempre parece imposible hasta que se hace" - N. Mandela</span>
+            </div>
+
+
+            <div class="agregar-tarea">
+                <input type="text" id="input" placeholder="Agregar una tarea">
+                <i id="enter" class="fas fa-plus-circle"></i>
+            </div>
+
+
+            <div class="seccion-tareas">
+                <h3>Lista de tareas pendientes</h3>
+                <ul id="lista">
+                
+                </ul>
+            </div>
+        </div>
+        <div class="app-clima">
+            <p class="recordatorio">¡No te olvides de revisar el clima actual si pensas salir de casa!</p>
+            <div class="input-ciudad">
+                <input type="text" class="inputCiudadValue" id="ciudad" placeholder="¿En qué ciudad te encuentras?">
+                <input type="submit" class="submit" value="Buscar" id="botonBusqueda">
+            </div>
+            <div class="display">
+                <h2 class="name" id="nombreCiudad"></h2>
+                <p class="temp" id="temperatura"></p>
+                <p class="desc" id="descripcion"></p>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>

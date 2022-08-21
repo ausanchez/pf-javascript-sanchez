@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fbfafa;
+    --light-orange: #fab93f;
+    --orange: #f05f10;
+    --gold: #dfbf0d;
+    --light-blue: #00aaff;
+    --medium-blue: #1155ca;
+    --blue: #010c38;
+}
+
+body {
+    background: var(--blue);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.app-tareas,
+.app-clima {
+    width: 500px;
+    height: 675px;
+    margin: 2rem auto;
+}
+
+/********** PERFIL *********/
+
+.perfil h1 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.perfil span {
+    color: var(--white);
+}
+
+#fecha{
+    color: var(--white);
+    padding: 50px 0 5px 0;
+}
+
+/****** AGREGAR TAREA *******/
+
+.agregar-tarea {
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
+}
+
+.agregar-tarea input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+}
+
+.agregar-tarea i {
+    font-size: 50px;
+    color: var(--blue);
+}
+
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agregar-tarea input::placeholder {
+    font-size: 1rem;
+    color: var(--blue);
+}
+
+/* SECCION TAREA */
+
+.seccion-tareas h3 {
+    color:var(--white);
+    margin-bottom: 20px;
+}
+
+.seccion-tareas li {
+    display: flex;
+    background: linear-gradient(to bottom right, var(--orange), var(--gold), var(--light-orange));
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: var(--white);
+}
+
+.seccion-tareas i {
+    font-size: 25px;
+}
+
+.seccion-tareas i:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+
+.seccion-tareas > ul p {
+    font-size: 1.2rem;
+}
+
+.tachado { 
+    text-decoration: line-through;
+    color: var(--blue);
+}
+
+
+/******* clima *********/
+
+.app-clima{
+    background-color: var(--blue);
+    border: 1px solid white;
+}
+
+.recordatorio{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    user-select: none;
+    padding: 10px;
+    color: var(--white);
+    margin: 20px auto;
+}
+
+.input-ciudad{
+    text-align: center;    
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 8px;
+}
+
+.inputCiudadValue,
+.submit{
+    width: 80%;
+    height: 50px;
+    background: var(--white);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.inputCiudadValue{
+    padding: 10px 10px;
+}
+
+.submit{
+    width: 80px;
+    height: 50px;
+}
+
+.display{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 60px;
+} 
+
+.name,
+.desc{
+    font-size: 2.5rem;
+    background: linear-gradient(to bottom right, var(--light-blue), var(--medium-blue),var(--blue));
+    color: var(--white);
+}
+
+.temp{
+    font-size: 4rem;
+    padding: 40px;
+    color: var(--white);
+}
